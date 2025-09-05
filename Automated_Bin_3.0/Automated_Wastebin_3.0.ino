@@ -2,19 +2,24 @@
 #include <LiquidCrystal.h>
 
 
+// HAND/OBJECT DETECTION UNLTRASONIC SENSOR
 #define trigPin 3
 #define echoPin 4
 
-
+//FILL LEVEL DETECTION ULTRASONIC SENSOR
 #define trig_trash 6
 #define echo_trash 5
 
 const int rs = 12, en = 11, d4 = 10, d5 = 9, d6 = 8, d7 = 7;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+
 Servo myservo;
 
+const int Servo_Initial_Position = 0;
+const int Servo_Pin = 2;
 const int SERVO_OPEN = 160;
-const int SERVO_CLOSED= -160;
+const int SERVO_CLOSED= 0;
 
 void setup() {
   Serial.begin(9600);   
@@ -24,8 +29,8 @@ void setup() {
   pinMode(trig_trash, OUTPUT);   
   pinMode(echo_trash, INPUT); 
 
-  myservo.attach(2);  
-  myservo.write(0);
+  myservo.attach(Servo_Pin);  
+  myservo.write(Servo_Initial_Position);
 
   
   lcd.begin(16, 2);
@@ -58,18 +63,17 @@ void loop() {
   long fill_level = duration_trash * 0.034 / 2;
 
 
-  if (distance < 45 && fill_level > 24) {
+  if (distance < 45 && fill_level > 24) {  // IF you are less than 45cm away from the bin and the bin isn't full, then the servo will activate, opening the bin.
    myservo.write(SERVO_OPEN);
    lcd.clear();
    lcd.setCursor(0, 0);
    lcd.print("Bin Status: OK");
    lcd.setCursor(0, 1);
    lcd.print("Drop your waste");
-   delay(3000); // keep open longer  
+   delay(3000); // keep open for 3 seconds before closing
    myservo.write(SERVO_CLOSED);
+}
 
-   //delay(1000);
-  }
   else if (fill_level < 15)  {
     delay(50);
     myservo.write(SERVO_CLOSED);
@@ -79,6 +83,10 @@ void loop() {
     lcd.setCursor(0, 1);
     lcd.print("Lid Locked   ");
   }
+  
+  
+  //For debugging, i.e checking if the sensors are working.
+  
   Serial.print("Distance: ");
   Serial.print(distance);
   Serial.println(" cm");
@@ -90,3 +98,4 @@ void loop() {
   
   delay(500);
 }
+
