@@ -21,7 +21,7 @@ An Arduino-based automated waste bin using ultrasonic sensors, servo motors, and
 https://github.com/user-attachments/assets/a9fd78a1-dd2f-4948-8ef7-7cccd60b1824
 
 ## Collaborators 
-This project wouldn't have been possible without help from my friends and colleagues, it was a group effort that led to the success of this project.
+This project wouldn't have been possible without help from my friends and colleagues, it was a group effort that led to the success of this project.\
 [Onotoghene Kohwarien](https://github.com/Kohwarien-Onotoghene)\
 [David Osayi](https://github.com/Just-Code-X)\
 [Munachimso Henry](https://github.com/Draycole)\
