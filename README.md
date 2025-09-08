@@ -1,5 +1,6 @@
 # Automated-Wastebin-SWEP2025
 An Arduino-based automated waste bin using ultrasonic sensors, servo motors, and an LCD.
+
 ## Features
 - Automatic lid opening when motion is detected
 - LCD (16X2) display for status messages
@@ -11,7 +12,7 @@ An Arduino-based automated waste bin using ultrasonic sensors, servo motors, and
 - HC-SR04 Ultrasonic Sensors (x2)
 - 16x2 LCD Display
 - Breadboard + Jumper wires
-- Using a power bank as the power supply
+- 5V 2A USB Power Supply Unit
 
 ## Demo vid
 (I'm the guy in pink, the person talking is my friend and colleague Osayi)
@@ -21,6 +22,9 @@ https://github.com/user-attachments/assets/a9fd78a1-dd2f-4948-8ef7-7cccd60b1824
 
 ## Collaborators 
 This project wouldn't have been possible without help from my friends and colleagues, it was a group effort that led to the success of this project.
+[Onotoghene Kohwarien](https://github.com/Kohwarien-Onotoghene)
+[David Osayi](https://github.com/Just-Code-X)
+[Munachimso Henry](https://github.com/Draycole)
 
 ## License
 This project is licensed under the MIT License.
