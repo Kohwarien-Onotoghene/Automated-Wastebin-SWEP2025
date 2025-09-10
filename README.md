@@ -14,6 +14,11 @@ An Arduino-based automated waste bin using ultrasonic sensors, servo motors, and
 - Breadboard + Jumper wires
 - 5V 2A USB Power Supply Unit
 
+## Circuit Diagram
+Here's the Ciruit Diagram.
+![Automated-Wastebin Schematic](schematic_diagram-1.png)
+You can view the circuit live [here](https://app.cirkitdesigner.com/project/e07abbf7-10a8-403c-8b51-ef054732fe02)
+
 ## Demo vid
 (I'm the guy in pink, the person talking is my friend and colleague Osayi)
 
