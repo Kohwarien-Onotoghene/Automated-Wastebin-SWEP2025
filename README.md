@@ -35,7 +35,7 @@ This project wouldn't have been possible without help from my friends and collea
 [Mayowa](https://www.linkedin.com/in/mayowa-soladoye-1536682a7/)\
 [Tofunmi](https://www.linkedin.com/in/oluwatofunmi-otuneye/)\
 [Destiny](https://www.linkedin.com/in/destiny-ekene-416108356/)\
-[Henry](https://github.com/Draycole)\
+[Henry](https://github.com/Draycole)
 
 
 ## License
